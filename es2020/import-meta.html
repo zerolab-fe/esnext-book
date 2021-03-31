@@ -1,0 +1,926 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>import.meta · ECMAScript Next Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zero lab fe <lishuaishuai.it@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../es2019/es2019.html" />
+    
+    
+    <link rel="prev" href="nullish-coalescing.html" />
+    
+
+    
+        <link rel="shortcut icon" href="https://esnext-book.lishuaishuai.com/assets/favicon.ico" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://esnext-book.lishuaishuai.com/assets/apple-touch-icon-precomposed-152.png">
+    
+    
+        
+    
+    
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/zerolab-fe" target="_blank" class="custom-link">零度实验室</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="es2020.html">
+            
+                <a href="es2020.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    ECMAScript 2020 (ES11)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="string-matchall.html">
+            
+                <a href="string-matchall.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    String.prototype.matchAll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="dynamic-import.html">
+            
+                <a href="dynamic-import.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Dynamic Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="bigint.html">
+            
+                <a href="bigint.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    BigInt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="promise-allSettled.html">
+            
+                <a href="promise-allSettled.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    Promise.allSettled
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="global.html">
+            
+                <a href="global.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    globalThis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="for-in-order.html">
+            
+                <a href="for-in-order.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    for-in mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="optional-chaining.html">
+            
+                <a href="optional-chaining.html">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Optional Chaining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="nullish-coalescing.html">
+            
+                <a href="nullish-coalescing.html">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    Nullish coalescing Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.9" data-path="import-meta.html">
+            
+                <a href="import-meta.html">
+            
+                    
+                        <b>1.2.9.</b>
+                    
+                    import.meta
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../es2019/es2019.html">
+            
+                <a href="../es2019/es2019.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    ECMAScript 2019 (ES10)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../es2019/optional-catch-binding.html">
+            
+                <a href="../es2019/optional-catch-binding.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Optional catch binding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../es2019/json-superset.html">
+            
+                <a href="../es2019/json-superset.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    JSON superset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../es2019/symbol-description.html">
+            
+                <a href="../es2019/symbol-description.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Symbol.prototype.description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../es2019/function-prototype-toString-revision.html">
+            
+                <a href="../es2019/function-prototype-toString-revision.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    Function.prototype.toString
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../es2019/object-from-entries.html">
+            
+                <a href="../es2019/object-from-entries.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    Object.fromEntries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../es2019/well-formed-stringify.html">
+            
+                <a href="../es2019/well-formed-stringify.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    Well-formed JSON.stringify
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../es2019/string-left-right-trim.html">
+            
+                <a href="../es2019/string-left-right-trim.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    String.prototype.{trimStart,trimEnd}
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../es2019/array-prototype-flatMap.html">
+            
+                <a href="../es2019/array-prototype-flatMap.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    Array.prototype.{flat,flatMap}
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../es2018/es2018.html">
+            
+                <a href="../es2018/es2018.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    ECMAScript 2018 (ES9)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../es2018/template-literal-revision.html">
+            
+                <a href="../es2018/template-literal-revision.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    Template Literal Revision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../es2018/regexp-dotall-flag.html">
+            
+                <a href="../es2018/regexp-dotall-flag.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    s/dotAll flag for regular expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../es2018/regexp-named-groups.html">
+            
+                <a href="../es2018/regexp-named-groups.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    RegExp Named Capture Groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../es2018/object-rest-spread.html">
+            
+                <a href="../es2018/object-rest-spread.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    Object Rest/Spread Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../es2018/regexp-lookbehind.html">
+            
+                <a href="../es2018/regexp-lookbehind.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    RegExp Lookbehind Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../es2018/regexp-unicode-property-escapes.html">
+            
+                <a href="../es2018/regexp-unicode-property-escapes.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    Unicode property escapes in regular expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../es2018/promise-finally.html">
+            
+                <a href="../es2018/promise-finally.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    Promise.prototype.finally
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../es2018/async-iteration.html">
+            
+                <a href="../es2018/async-iteration.html">
+            
+                    
+                        <b>1.4.8.</b>
+                    
+                    Async Iteration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../es2017/es2017.html">
+            
+                <a href="../es2017/es2017.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    ECMAScript 2017 (ES8)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../es2017/async-await.html">
+            
+                <a href="../es2017/async-await.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Async / Await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../es2017/sharedmem.html">
+            
+                <a href="../es2017/sharedmem.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    Shared Memory and Atomics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../es2017/object-values-entries.html">
+            
+                <a href="../es2017/object-values-entries.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    Object.values / Object.entries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../es2017/string-pad-start-end.html">
+            
+                <a href="../es2017/string-pad-start-end.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    String padding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../es2017/trailing-function-commas.html">
+            
+                <a href="../es2017/trailing-function-commas.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    Trailing comma
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../es2017/object-getownpropertydescriptors.html">
+            
+                <a href="../es2017/object-getownpropertydescriptors.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    Object.getOwnPropertyDescriptors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../es2016/es2016.html">
+            
+                <a href="../es2016/es2016.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    ECMAScript 2016 (ES7)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../es2016/array-prototype-includes.html">
+            
+                <a href="../es2016/array-prototype-includes.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    Array.prototype.includes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../es2016/proposal-exponentiation-operator.html">
+            
+                <a href="../es2016/proposal-exponentiation-operator.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    求幂运算符(**)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >import.meta</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="importmeta"><a name="importmeta" class="plugin-anchor" href="#importmeta"><i class="fa fa-link" aria-hidden="true"></i></a>import.meta</h1>
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="plugin-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x4ECB;</h2>
+<p>&#x5F00;&#x53D1;&#x8005;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x77E5;&#x9053;&#x6A21;&#x677F;&#x672C;&#x8EAB;&#x7684;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF08;&#x6BD4;&#x5982;&#x6A21;&#x5757;&#x7684;&#x8DEF;&#x5F84;&#xFF09;&#x3002;ES2020 &#x4E3A; import &#x547D;&#x4EE4;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x5143;&#x5C5E;&#x6027; <code>import.meta</code>&#xFF0C;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x7684;&#x5143;&#x4FE1;&#x606F;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;"><a name="&#x8BED;&#x6CD5;" class="plugin-anchor" href="#&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BED;&#x6CD5;</h2>
+<p><code>import.meta</code> &#x53EA;&#x80FD;&#x5728;&#x6A21;&#x5757;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x6A21;&#x5757;&#x5916;&#x90E8;&#x4F7F;&#x7528;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x5404;&#x79CD;&#x5C5E;&#x6027;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7684;&#x811A;&#x672C;&#x7684;&#x5143;&#x4FE1;&#x606F;&#x3002;&#x5177;&#x4F53;&#x5305;&#x542B;&#x54EA;&#x4E9B;&#x5C5E;&#x6027;&#xFF0C;&#x6807;&#x51C6;&#x6CA1;&#x6709;&#x89C4;&#x5B9A;&#xFF0C;&#x7531;&#x5404;&#x4E2A;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x81EA;&#x884C;&#x51B3;&#x5B9A;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;<code>import.meta</code> &#x81F3;&#x5C11;&#x4F1A;&#x6709;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x3002;</p>
+<h3 id="importmetaurl"><a name="importmetaurl" class="plugin-anchor" href="#importmetaurl"><i class="fa fa-link" aria-hidden="true"></i></a>import.meta.url</h3>
+<p><code>import.meta.url</code> &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x7684; URL &#x8DEF;&#x5F84;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x4E3B;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x662F; <code>https://foo.com/main.js</code>&#xFF0C;<code>import.meta.url</code> &#x5C31;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;&#x5982;&#x679C;&#x6A21;&#x5757;&#x91CC;&#x9762;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6587;&#x4EF6; <code>data.txt</code>&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> URL(<span class="hljs-string">&apos;data.txt&apos;</span>, <span class="hljs-keyword">import</span>.meta.url)
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;Node.js &#x73AF;&#x5883;&#x4E2D;&#xFF0C;<code>import.meta.url</code> &#x8FD4;&#x56DE;&#x7684;&#x603B;&#x662F;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#xFF0C;&#x5373;&#x662F; <code>file:URL</code> &#x534F;&#x8BAE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BD4;&#x5982; <code>file:///home/user/foo.js</code>&#x3002;</p>
+<h3 id="importmetascriptelement"><a name="importmetascriptelement" class="plugin-anchor" href="#importmetascriptelement"><i class="fa fa-link" aria-hidden="true"></i></a>import.meta.scriptElement</h3>
+<p><code>import.meta.scriptElement</code> &#x662F;&#x6D4F;&#x89C8;&#x5668;&#x7279;&#x6709;&#x7684;&#x5143;&#x5C5E;&#x6027;&#xFF0C;&#x8FD4;&#x56DE;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#x7684;&#x90A3;&#x4E2A;<code>&lt;script&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>document.currentScript</code> &#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// HTML &#x4EE3;&#x7801;&#x4E3A;</span>
+<span class="hljs-comment">// &lt;script type=&quot;module&quot; src=&quot;my-module.js&quot; data-foo=&quot;abc&quot;&gt;&lt;/script&gt;</span>
+
+<span class="hljs-comment">// my-module.js &#x5185;&#x90E8;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;</span>
+<span class="hljs-keyword">import</span>.meta.scriptElement.dataset.foo
+<span class="hljs-comment">// &quot;abc&quot;</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x96F6;&#x5EA6;&#x5B9E;&#x9A8C;&#x5BA4; 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-03-31 02:11:44
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="nullish-coalescing.html" class="navigation navigation-prev " aria-label="Previous page: Nullish coalescing Operator">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../es2019/es2019.html" class="navigation navigation-next " aria-label="Next page: ECMAScript 2019 (ES10)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"import.meta","level":"1.2.9","depth":2,"next":{"title":"ECMAScript 2019 (ES10)","level":"1.3","depth":1,"path":"es2019/es2019.md","ref":"es2019/es2019.md","articles":[{"title":"Optional catch binding","level":"1.3.1","depth":2,"path":"es2019/optional-catch-binding.md","ref":"es2019/optional-catch-binding.md","articles":[]},{"title":"JSON superset","level":"1.3.2","depth":2,"path":"es2019/json-superset.md","ref":"es2019/json-superset.md","articles":[]},{"title":"Symbol.prototype.description","level":"1.3.3","depth":2,"path":"es2019/symbol-description.md","ref":"es2019/symbol-description.md","articles":[]},{"title":"Function.prototype.toString","level":"1.3.4","depth":2,"path":"es2019/function-prototype-toString-revision.md","ref":"es2019/function-prototype-toString-revision.md","articles":[]},{"title":"Object.fromEntries","level":"1.3.5","depth":2,"path":"es2019/object-from-entries.md","ref":"es2019/object-from-entries.md","articles":[]},{"title":"Well-formed JSON.stringify","level":"1.3.6","depth":2,"path":"es2019/well-formed-stringify.md","ref":"es2019/well-formed-stringify.md","articles":[]},{"title":"String.prototype.{trimStart,trimEnd}","level":"1.3.7","depth":2,"path":"es2019/string-left-right-trim.md","ref":"es2019/string-left-right-trim.md","articles":[]},{"title":"Array.prototype.{flat,flatMap}","level":"1.3.8","depth":2,"path":"es2019/array-prototype-flatMap.md","ref":"es2019/array-prototype-flatMap.md","articles":[]}]},"previous":{"title":"Nullish coalescing Operator","level":"1.2.8","depth":2,"path":"es2020/nullish-coalescing.md","ref":"es2020/nullish-coalescing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","splitter","advanced-emoji","tbfed-pagefooter","expandable-chapters-small","anchors","back-to-top-button","page-toc-button","favicon-absolute","theme-comscore","github"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 零度实验室 2020","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zerolab-fe/esnext-book"},"splitter":{},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"https://esnext-book.lishuaishuai.com/assets/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"https://esnext-book.lishuaishuai.com/assets/favicon.ico"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zero lab fe <lishuaishuai.it@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ECMAScript Next Book","language":"zh-hans","links":{"sidebar":{"零度实验室":"https://github.com/zerolab-fe"}},"gitbook":">=3.2.3","description":"ECMAScript Next 系列教程"},"file":{"path":"es2020/import-meta.md","mtime":"2021-03-31T02:11:44.205Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-31T02:13:50.855Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
