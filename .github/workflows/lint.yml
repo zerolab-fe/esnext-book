@@ -1,0 +1,25 @@
+name: lint
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      - name: Install and Lint 🔧
+        run: |
+          npm install
+          npm run lint
