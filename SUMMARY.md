@@ -1,6 +1,12 @@
 # Summary
 
 - [简介](README.md)
+- [ECMAScript 2021 (ES12)](es2021/es2021.md)
+  - [String.prototype.replaceAll](string-replaceall.md)
+  - [Promise.any](promise-any.md)
+  - [WeakRefs](weakrefs.md)
+  - [Logical Assignment Operators](logical-assignment.md)
+  - [Numeric Separators](numeric-separator.md)
 - [ECMAScript 2020 (ES11)](es2020/es2020.md)
   - [String.prototype.matchAll](es2020/string-matchall.md)
   - [Dynamic Import](es2020/dynamic-import.md)
