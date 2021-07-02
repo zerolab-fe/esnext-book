@@ -35,7 +35,8 @@ ECMAScript Next 系列教程，是对 ECMAScript 2016、2017、2018、2019、202
 - [ECMAScript 2018 (ES9)](https://esnext-book.lishuaishuai.com/es2018/es2018.html)
 - [ECMAScript 2019 (ES10)](https://esnext-book.lishuaishuai.com/es2019/es2019.html)
 - [ECMAScript 2020 (ES11)](https://esnext-book.lishuaishuai.com/es2020/es2020.html)
-- ECMAScript 2021 (ES12) WIP
+- [ECMAScript 2021 (ES12)](https://esnext-book.lishuaishuai.com/es2021/es2021.html)
+- [ECMAScript 2022 (ES13)](https://esnext-book.lishuaishuai.com/es2022/es2022.html)
 
 ## 👨‍💻 作者
 
